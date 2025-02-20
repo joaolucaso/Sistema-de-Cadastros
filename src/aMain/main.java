@@ -1,13 +1,14 @@
 package aMain;
-
-import cadastros.formulario;
-
-import java.io.IOException;
-
+import cadastros.printFormulario;
+import cadastros.newCadastros;
 public class main {
-    public static void main(String[] args) throws IOException {
-        formulario formulario = new formulario();
-        System.out.println(formulario);
+    public static void main(String[] args) {
+printFormulario printar = new printFormulario();
+printar.leituraFormulario();
+
+newCadastros cadastros =new newCadastros();
+cadastros.salvar();
+
 
 
     }
