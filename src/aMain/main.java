@@ -1,15 +1,17 @@
 package aMain;
+
+import cadastros.pessoas;
 import cadastros.printFormulario;
-import cadastros.newCadastros;
+
+import java.io.FileNotFoundException;
+
 public class main {
-    public static void main(String[] args) {
-printFormulario printar = new printFormulario();
-printar.leituraFormulario();
+    public static void main(String[] args) throws FileNotFoundException {
 
-newCadastros cadastros =new newCadastros();
-cadastros.salvar();
-
-
+        printFormulario printar = new printFormulario();
+        printar.leituraFormulario();
+        pessoas cadastro = new pessoas();
+        cadastro.salvar();
 
     }
 }
